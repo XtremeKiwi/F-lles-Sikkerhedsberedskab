@@ -1,0 +1,386 @@
+            /* Preparation of the website */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto Slab";
+}
+button:hover{
+    cursor: pointer;
+}
+body{
+    background-color: var(--mainWhite);
+    overflow-x: hidden;
+}
+main{
+    margin-right: 12%;
+    margin-left: 12%;
+}
+:root{
+    --mainYellow: #EAD653;
+    --mainWhite: #F2f2f2;
+    --fullWhite: #FFFFFF;
+    --darkgrey: #252525;
+    --lightgray: #d9d9d9;
+    --primaryBlue: #08003A;
+    --secondaryBlue: #000861;
+    --tertiaryBlue: #13008C;
+}
+
+
+
+
+            /* Main part of the website */
+            /* Navigation-bar header */
+header {
+    width: 100%;
+    height: 8em;
+    background-color: var(--primaryBlue);
+    color: var(--mainYellow);
+    z-index: 10;
+    position: fixed;
+
+}
+header .logo img{
+    position: absolute;
+    height: 20em;
+    font-stretch: expanded;
+    text-align: center;
+    top: -5em;
+}
+header .navigation{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    top: 4.5em;
+}
+header .navigation .navigationText{
+    text-wrap: auto;
+    width: 15%;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+
+
+            /* Video Introduction on the index page */
+#introVideo{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    border-color: var(--darkgrey);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-radius: 0 0 30px 30px;
+}
+
+section .transparentCircle{
+    height: 40%;
+    aspect-ratio: 1/1;
+    max-width: 400px;
+    max-height: 400px;
+    background-color: var(--primaryBlue);
+    color: var(--mainWhite);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.15rem;
+    position: absolute;
+    right: 1%;
+    top:5rem;
+    opacity: 90%;
+
+}
+section .transparentCircle .circleTextWrap{
+    width: 40%;
+}
+section .phoneNumberIntro{
+    border-radius: 60px;
+    padding: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    background-color: var(--primaryBlue);
+    color: var(--mainWhite);
+    position: relative;
+    left: 10em;
+    top: -4em;
+    border-style: solid;
+    border-color: var(--darkgrey);
+    border-width: 3px;
+    z-index: 2;
+}
+section .phoneNumberIntro:hover{
+    background-color: var(--secondaryBlue);
+}
+
+
+
+            /* Intro text right after the video */
+.introText {
+    position: relative;
+    top: 0em;
+    background-color: var(--primaryBlue);
+    color: var(--mainWhite);
+    border-radius: 30px 30px 0 0 ;
+    width: 50%;
+    height: fit-content;
+    padding: 5em;
+    padding-top: 6em;
+    letter-spacing: 0.15em;
+    margin: 0 auto;
+    z-index: -1;
+    line-height: 2em;
+}
+.introText h1{
+    text-align: center;
+    padding: 2em;
+}
+.voresRåd{
+    width: 170%;
+    height: 5em;
+    border-radius: 60px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--darkgrey);
+    background-color: var(--tertiaryBlue);
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    position: relative;
+    top: 3em;
+}
+.voresRåd h1{
+    position: relative;
+    top: -1em;
+}
+
+
+
+            /*Main advice styling */
+.adviceTitle{
+    width: 100%;
+    height: 5em;
+    background-color: var(--primaryBlue);
+    color: var(--mainWhite);
+    position: relative;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-left: 50%;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: var(--darkgrey);
+    margin-top: 2em;
+}
+.adviceTitle h1{
+    position: relative;
+    font-size: xxx-large;
+    top: 0.15em;
+    letter-spacing: 0.2em;
+}
+.adviceGrid{
+    display: grid;
+    grid-template-areas:
+            "contentLeft contentRight";
+}
+.adviceGrid .leftPartOfAdvice{
+    grid-area: contentLeft;
+}
+.adviceGrid .rightPartOfAdvice{
+    grid-area: contentRight;
+}
+.adviceImage{
+    position: relative;
+    padding-left: 50%;
+    left: -50%;
+    border-radius: 0 200px 200px 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--mainYellow);
+    width: 100%;
+    height:25em;
+    background-color: var(--tertiaryBlue);
+    z-index: 2;
+}
+            .firstImageAdvice {
+                width: 150%;
+                height: 23em;
+                border-radius: 200px 200px;
+                position: relative;
+                top: 4.5%;
+                right: 55%;
+                object-fit: cover;
+            }
+.checklist{
+    width: 50%;
+    height: 20em;
+    position: relative;
+    background-color: var(--primaryBlue);
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 5em;
+    text-wrap: wrap;
+    color: var(--mainYellow);
+    letter-spacing: 0.15em;
+    line-height: 2.5em;
+    top: -5em;
+    border-radius: 0 0 30px 30px;
+    left: -5em;
+}
+.leftPartOfAdvice .checklist .buttonMedium{
+    border-radius: 15px;
+    padding: 1.5em;
+    background: linear-gradient(var(--mainYellow) 60%, var(--mainWhite));
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+.rightPartOfAdvice {
+    width: 120%;
+    position: relative;
+    text-align: left;
+    justify-content: right;
+    align-items: end;
+}
+.rightPartOfAdvice p {
+    padding: 2em;
+    padding-left: 2em;
+}
+
+
+
+        /*Midway windmill video */
+.dividerBar{
+    width: 80%;
+    height: 2em;
+    background-color: var(--primaryBlue);
+    border-radius: 60px 60px 0 0;
+    margin: 0 auto;
+}
+.midwayLowerBar{
+    height:10em;
+    width:35em;
+    background-color: var(--primaryBlue);
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    top: -10em;
+    justify-content: center;
+    align-content: center;
+    color: var(--mainWhite);
+    margin: 0 auto;
+    padding: 0 2em;
+
+}
+#midwayVideo{
+border-radius: 60px 60px 0 0 ;
+}
+
+
+
+            /*Second half of advice */
+.secondAdviceGrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.leftPartOfAdvice2{
+    height: 40em;
+    width: 90%;
+    background-color: var(--primaryBlue);
+    border-radius: 30px 30px 30px 30px;
+    color: var(--mainWhite);
+    padding: 2em;
+    margin-bottom: 8em;
+
+}
+.textboxAdvice2 p{
+    padding: 1em;
+    padding-left: 2em;
+    text-wrap: wrap;
+    width: 90%;
+}
+
+
+.rightPartOfAdvice2{
+    height: 40em;
+    width: 100%;
+    background-color: var(--primaryBlue);
+    border-radius: 30px 30px 30px 30px;
+    padding: 2em;
+}
+.rightPartOfAdvice2 .adviceImage2{
+    height: 20em;
+    width: 140%;
+    border-radius: 160px 60px 60px 160px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--mainYellow);
+    background-color: #13008C;
+    position: relative;
+    right: 3em;
+    z-index: 2;
+}
+            .secondImageAdvice {
+                width: 90%;
+                height: 17em;
+                border-radius: 160px 60px 60px 160px;
+                position: relative;
+                top: 1.5em;
+                left: 1em;
+                object-fit: cover;
+            }
+.rightPartOfAdvice2 .checklist2{
+    height: 15em;
+    width: 50%;
+    background-color: var(--fullWhite);
+    border-radius: 0 0 30px 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--mainYellow);
+    position: relative;
+    top: -5em;
+    padding-left: 4em;
+    padding-top: 5em;
+    line-height: 2.5em;
+    left: 5em;
+}
+.finalWords{
+    position: relative;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 6em;
+    padding: 4em;
+
+}
+
+
+
+            /* footer */
+footer{
+    position: relative;
+    display: flex;
+    height: 20em;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+    text-align: center;
+    z-index: 2;
+    overflow-x: hidden;
+    background-color: var(--darkgrey);
+    color: var(--mainWhite);}
+footer .footerButton{
+    padding: 1.5em 2em;
+    border-radius: 60px;
+}
+
+            /* Media changes for better responsiveness */
+            TODO: @media
